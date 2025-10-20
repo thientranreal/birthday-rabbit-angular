@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg: #fff7fb;
+  --card: #fff;
+  --accent: #ffb6d9;
+  --accent-2: #ffd6e8;
+  --text: #3b2b2b;
+  --muted: #7a5a6b;
+  --shadow: 0 12px 30px rgba(99, 56, 86, 0.12);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background:
+    radial-gradient(circle at 10% 10%, #fff1f6 0%, transparent 20%),
+    linear-gradient(180deg, #fffaf8 0%, #fff1f7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}

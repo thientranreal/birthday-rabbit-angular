@@ -1,0 +1,94 @@
+.safe-container {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #fffaf4, #ffe6ea);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* Rabbit ears */
+.safe-container::before,
+.safe-container::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  width: 40px;
+  height: 70px;
+  background: #fff;
+  border-radius: 50px 50px 0 0;
+  border: 3px solid #ffcce0;
+}
+.safe-container::before { left: 70px; }
+.safe-container::after { right: 70px; }
+
+/* Title */
+h2 {
+  margin-bottom: 15px;
+  color: #ff6fa5;
+  font-weight: bold;
+}
+
+/* Display area */
+.display {
+  height: 50px;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #ffd1e6;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 5px;
+  padding: 10px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Keypad layout */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Number buttons */
+.keypad button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background: #ffb6d9;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.keypad button:hover {
+  transform: translateY(-3px);
+  background: #ff8ec4;
+}
+
+/* Clear button */
+.clear-btn {
+  background: #ffd1e6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.2s;
+}
+
+.clear-btn:hover {
+  transform: translateY(-3px);
+  background: #ffb6d9;
+}
+
+/* Error message */
+.error {
+  color: #e63946;
+  margin-top: 10px;
+  font-weight: bold;
+}

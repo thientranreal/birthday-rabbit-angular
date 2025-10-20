@@ -1,0 +1,18 @@
+<div class="safe-container">
+  <h2>Enter Password</h2>
+
+  <div class="display">
+    {{ maskedInput }}
+  </div>
+
+  <div class="keypad">
+    <button *ngFor="let num of ['1','2','3','4','5','6','7','8','9','0']"
+            (click)="press(num)">
+      {{ num }}
+    </button>
+  </div>
+
+  <button class="clear-btn" (click)="clear()">Clear</button>
+
+  <div *ngIf="error" class="error">Wrong Password!</div>
+</div>

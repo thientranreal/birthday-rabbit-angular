@@ -1,88 +1,103 @@
-<article class="card" role="article" aria-label="Rabbit themed birthday card">
-  <!-- left panel with rabbit -->
-  <aside class="rabbit-panel" aria-hidden="true">
-    <svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="#ff5b92"
-        d="M12 21s-7.2-4.7-9.2-7c-1.9-2.1-1.1-5 1.1-6.6C6 5 8.3 6 9 7.3 9.7 6 12 5 13.1 7.4c.9 1.9 2.9 2.1 4 1 1.7-1.7 4.8-.5 5.2 1.9.5 3-2.7 6.7-7.3 9.7L12 21z" />
-    </svg>
+<div id="intro">
+  <div class="rabbit"></div>
+</div>
 
-    <div class="bunny" role="img" aria-label="cute rabbit face">
-      <!-- eyes & nose layout -->
-      <div class="face-row">
-        <div class="eye" aria-hidden="true"></div>
-        <div class="nose" aria-hidden="true"></div>
-        <div class="eye" aria-hidden="true"></div>
+<div id="card-container" style="display: block">
+  <article class="card" role="article" aria-label="Rabbit themed birthday card">
+    <!-- left panel with rabbit -->
+    <aside class="rabbit-panel" aria-hidden="true">
+      <svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="#ff5b92"
+          d="M12 21s-7.2-4.7-9.2-7c-1.9-2.1-1.1-5 1.1-6.6C6 5 8.3 6 9 7.3 9.7 6 12 5 13.1 7.4c.9 1.9 2.9 2.1 4 1 1.7-1.7 4.8-.5 5.2 1.9.5 3-2.7 6.7-7.3 9.7L12 21z"
+        />
+      </svg>
+
+      <div class="bunny" role="img" aria-label="cute rabbit face">
+        <!-- eyes & nose layout -->
+        <div class="face-row">
+          <div class="eye" aria-hidden="true"></div>
+          <div class="nose" aria-hidden="true"></div>
+          <div class="eye" aria-hidden="true"></div>
+        </div>
+
+        <div class="whiskers" aria-hidden="true"></div>
       </div>
 
-      <div class="whiskers" aria-hidden="true"></div>
-    </div>
-
-    <div style="text-align:center; margin-top:18px;">
-      <div style="font-weight:700; font-size:18px; color:#b02c63">My Little Bunny</div>
-      <div style="color:var(--muted); font-size:13px; margin-top:6px;">
-        Soft as hugs, sweet as you.
+      <div style="text-align: center; margin-top: 18px">
+        <div style="font-weight: 700; font-size: 18px; color: #b02c63">My Little Bunny</div>
+        <div style="color: var(--muted); font-size: 13px; margin-top: 6px">
+          Soft as hugs, sweet as you.
+        </div>
       </div>
-    </div>
+    </aside>
 
-  </aside>
+    <!-- right panel with message -->
+    <section class="message">
+      <div>
+        <div class="title">Happiest Birthday, My Love</div>
+        <div class="subtitle">To my dearest — my calm, my joy, my home.</div>
 
-  <!-- right panel with message -->
-  <section class="message">
-    <div>
-      <div class="title">Happiest Birthday, My Love</div>
-      <div class="subtitle">To my dearest — my calm, my joy, my home.</div>
-
-      <div class="body">
-        Like a gentle bunny in a sunlit meadow, you make my world feel safe, warm, and full of wonder.
-        <br><br>
-        On your birthday I wish you the same comfort and sweetness you give me every day:
-        <ul style="margin:10px 0 12px 18px; color:#5a3945;">
-          <li><span class="em">Laughter</span> in moments small and big.</li>
-          <li><span class="em">Warmth</span> when days are cold.</li>
-          <li><span class="em">Courage</span> to chase every dream.</li>
-        </ul>
-        I choose you — today, tomorrow, always. Let’s hop through life together, paw in hand.
-      </div>
-    </div>
-
-    <div style="display:flex; align-items:center; justify-content:space-between;">
-      <div class="signature">
-        <div class="sig-avatar">♥︎</div>
-        <div class="sig-text">
-          With all my love,<br>
-          <strong style="font-family:'Playfair Display',serif; font-size:16px; color:#8c2c54">Anh yêu</strong>
+        <div class="body">
+          Like a gentle bunny in a sunlit meadow, you make my world feel safe, warm, and full of
+          wonder.
+          <br /><br />
+          On your birthday I wish you the same comfort and sweetness you give me every day:
+          <ul style="margin: 10px 0 12px 18px; color: #5a3945">
+            <li><span class="em">Laughter</span> in moments small and big.</li>
+            <li><span class="em">Warmth</span> when days are cold.</li>
+            <li><span class="em">Courage</span> to chase every dream.</li>
+          </ul>
+          I choose you — today, tomorrow, always. Let’s hop through life together, paw in hand.
         </div>
       </div>
 
-      <div class="controls" aria-hidden="true">
-        <button class="secondary"
-          onclick="document.getElementById('downloadMsg').scrollIntoView({behavior:'smooth'})">Message</button>
-        <button class="action" onclick="window.print()">Print / Save</button>
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <div class="signature">
+          <div class="sig-avatar">♥︎</div>
+          <div class="sig-text">
+            With all my love,<br />
+            <strong style="font-family: 'Playfair Display', serif; font-size: 16px; color: #8c2c54"
+              >Anh yêu</strong
+            >
+          </div>
+        </div>
+
+        <div class="controls" aria-hidden="true">
+          <button
+            class="secondary"
+            onclick="document.getElementById('downloadMsg').scrollIntoView({behavior:'smooth'})"
+          >
+            Message
+          </button>
+          <button class="action" onclick="window.print()">Print / Save</button>
+        </div>
       </div>
+
+      <div class="ribbon">Birthday • Em yêu</div>
+    </section>
+  </article>
+
+  <!-- Optional hidden detailed message you might copy/paste/send -->
+  <main id="downloadMsg" style="display: none">
+    <div style="max-width: 720px; margin: 20px auto; font-size: 14px; color: #3b2b2b">
+      <h3 style="font-family: 'Playfair Display', serif; color: #b02c63; margin-bottom: 6px">
+        Full message (copy/paste)
+      </h3>
+      <p>To my dearest love,</p>
+      <p>
+        Like a gentle bunny curled up in the softest meadow, you bring peace, warmth, and endless
+        joy to my heart. Every moment with you feels calm and magical—like springtime that never
+        ends. You are my safe place, my laughter, my softest “hop” forward in life.
+      </p>
+      <p>
+        On this special day, I want you to know: I cherish every smile you share; I admire your
+        kindness and beautiful heart; I’m grateful for the way you love—pure and gentle. I will
+        always choose you, again and again.
+      </p>
+      <p style="font-weight: 700">
+        Happy Birthday, my bunny. I love you — more than words, more than forever.
+      </p>
     </div>
-
-    <div class="ribbon">Birthday • Em yêu</div>
-  </section>
-</article>
-
-<!-- Optional hidden detailed message you might copy/paste/send -->
-<main id="downloadMsg" style="display:none">
-  <div style="max-width:720px; margin:20px auto; font-size:14px; color:#3b2b2b;">
-    <h3 style="font-family:'Playfair Display',serif;color:#b02c63;margin-bottom:6px">Full message (copy/paste)</h3>
-    <p>
-      To my dearest love,
-    </p>
-    <p>
-      Like a gentle bunny curled up in the softest meadow, you bring peace, warmth, and endless joy to my heart.
-      Every moment with you feels calm and magical—like springtime that never ends.
-      You are my safe place, my laughter, my softest “hop” forward in life.
-    </p>
-    <p>
-      On this special day, I want you to know: I cherish every smile you share; I admire your kindness and beautiful
-      heart; I’m grateful for the way you love—pure and gentle. I will always choose you, again and again.
-    </p>
-    <p style="font-weight:700">
-      Happy Birthday, my bunny. I love you — more than words, more than forever.
-    </p>
-  </div>
-</main>
+  </main>
+</div>

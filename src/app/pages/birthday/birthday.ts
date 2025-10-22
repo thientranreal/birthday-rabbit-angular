@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { FallingParticle } from '../../components/falling-particle/falling-particle';
 
 @Component({
   selector: 'app-birthday',
-  imports: [],
+  imports: [FallingParticle],
   templateUrl: './birthday.html',
-  styleUrl: './birthday.css'
+  styleUrl: './birthday.css',
 })
-export class Birthday {
-
-}
+export class Birthday {}
